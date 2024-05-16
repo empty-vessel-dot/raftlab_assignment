@@ -27,7 +27,7 @@ const SignupForm: React.FC = () => {
     try {
 
        
-        const response=await axios.post("http://localhost:8100/api/auth/register", formData);
+        const response=await axios.post("https://taskassignmentrfl-hh4i7bmrq-harsh-sharmas-projects-090105a0.vercel.app/api/auth/register", formData);
         console.log(response)
         
         navigate('/');

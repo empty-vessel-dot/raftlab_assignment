@@ -27,7 +27,7 @@ const Task: React.FC = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get(`http://localhost:8100/api/todo/user/${user_id}`);
+        const response = await axios.get(`https://taskassignmentrfl-hh4i7bmrq-harsh-sharmas-projects-090105a0.vercel.app/api/todo/user/${user_id}`);
         let fetchedTasks = response.data;
 
         if (sortOption === 'date') {

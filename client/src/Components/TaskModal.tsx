@@ -30,7 +30,7 @@ const TaskModal: React.FC<TaskModalProps> = ({ task, onClose }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:8100/api/todo/update/${task._id}`, formData);
+      const response = await axios.put(`https://taskassignmentrfl-hh4i7bmrq-harsh-sharmas-projects-090105a0.vercel.app/api/todo/update/${task._id}`, formData);
       console.log('Task updated successfully:', response.data);
       window.location.reload();
       onClose();
@@ -40,7 +40,7 @@ const TaskModal: React.FC<TaskModalProps> = ({ task, onClose }) => {
   };
   const handleDelete = async () => {
     try {
-      const response = await axios.delete(`http://localhost:8100/api/todo/delete/${task._id}`);
+      const response = await axios.delete(`https://taskassignmentrfl-hh4i7bmrq-harsh-sharmas-projects-090105a0.vercel.app/api/todo/delete/${task._id}`);
       console.log('Task deleted successfully:', response.data);
       window.location.reload();
       onClose();
