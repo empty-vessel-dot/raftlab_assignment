@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Gideon+Roman&family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Gideon+Roman&family=Italianno&family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Gideon+Roman&family=Habibi&family=Italianno&family=Just+Another+Hand&display=swap');
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.gideon-roman-regular {
+  font-family: "Gideon Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.gabarito {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.just-another-hand-regular {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.habibi-regular {
+  font-family: "Habibi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.animate-expandWidth {
+  animation: expandWidth 1s ease forwards;
+}
+
+@keyframes expandWidth {
+  from {
+      width: 0;
+  }
+  to {
+      width: 300px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(20%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+
+
+.animate-slideIn {
+  animation: slideIn 2s ease forwards;
+}
+
+
+@keyframes b1{
+  0%{
+    top:40%;
+    left:80%;
+    z-index:0;
+  }
+  50%{
+    top:90%;
+    left:30%;
+    z-index:1;
+
+  }
+  100%{
+    top:90%;
+    left:30%;
+    transform:rotate(90deg)
+
+  }
+}
+@keyframes b2{
+  0%{
+    top:40%;
+    left:80%;
+    z-index:0;
+  }
+  50%{
+    top:85%;
+    left:2%;
+    z-index:1;
+
+  }
+  100%{
+    top:85%;
+    left:2%;
+    transform:rotate(90deg)
+
+  }
+ 
+}
+@keyframes b3{
+  0%{
+    top:40%;
+    left:80%;
+    z-index:0;
+  }
+  50%{
+    top:15%;
+    left:20%;
+    z-index:1;
+
+  }
+  100%{
+    top:15%;
+    left:20%;
+    transform:rotate(90deg)
+
+  }
+ 
+}
+@keyframes b4{
+  0%{
+    top:40%;
+    left:80%;
+    z-index:0;
+  }
+  50%{
+    top:15%;
+    left:40%;
+    z-index:1;
+
+  }
+  100%{
+    top:15%;
+    left:40%;
+    transform:rotate(90deg)
+
+  }
+ 
+}
+@keyframes b5{
+  0%{
+    top:40%;
+    left:80%;
+    z-index:0;
+  }
+  50%{
+    top:60%;
+    left:50%;
+    z-index:1;
+
+  }
+
+  100%{
+    top:60%;
+    left:50%;
+    transform:rotate(90deg)
+
+  }
+ 
+}
+@keyframes b6{
+  0%{
+    top:40%;
+    left:80%;
+    z-index:0;
+  }
+  50%{
+    top:18%;
+    right:5%;
+    z-index:1;
+
+  }
+  100%{
+    top:18%;
+    right:5%;
+    transform:rotate(90deg)
+
+  }
+ 
+}
+@keyframes b7{
+  0%{
+    top:40%;
+    left:80%;
+    z-index:0;
+  }
+  50%{
+    top:50%;
+    right:4%;
+    z-index:1;
+
+  }
+  100%{
+    top:50%;
+    right:4%;
+    transform:rotate(90deg)
+
+  }
+
+}
+.animate-b1 {
+  animation: b1 5s ease forwards;
+}
+
+.animate-b2 {
+  animation: b2 5s ease forwards;
+}
+
+.animate-b3 {
+  animation: b3 5s ease forwards;
+}
+
+.animate-b4 {
+  animation: b4 5s ease forwards;
+}
+
+.animate-b5 {
+  animation: b5 5s ease forwards;
+}
+
+.animate-b6 {
+  animation: b6 5s ease forwards;
+}
+
+.animate-b7 {
+  animation: b7 5s ease forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-mask {
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+.spin{
+  animation:rotate 3s linear infinite;
+
+}
+@keyframes rotate{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
