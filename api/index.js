@@ -8,6 +8,8 @@ import TodoRoute from "./routes/todo.js"
 const app=express()
 dotenv.config()
 
+app.use(cors({ origin: 'https://taskassignmentrfl-qm4w4a7vw-harsh-sharmas-projects-090105a0.vercel.app' }));
+
 const connect=async()=>{
     try{
         await mongoose.connect(process.env.MONGO);
