@@ -8,11 +8,7 @@ import TodoRoute from "./routes/todo.js";
 const app = express();
 
 // Apply cors middleware with specific options
-app.use(cors({
-    origin: 'https://taskassignmentrfl-qm4w4a7vw-harsh-sharmas-projects-090105a0.vercel.app',
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+app.use(cors());
 
 dotenv.config();
 
