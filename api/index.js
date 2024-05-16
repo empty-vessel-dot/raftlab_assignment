@@ -5,10 +5,17 @@ import authRoute from "./routes/auth.js"
 import cors from 'cors';
 import TodoRoute from "./routes/todo.js"
 
+
 const app=express()
+
+app.use(cors({
+    origin: 'https://taskassignmentrfl-qm4w4a7vw-harsh-sharmas-projects-090105a0.vercel.app',
+    methods: ['GET', 'POST'], 
+    allowedHeaders: ['Content-Type', 'Authorization'] 
+  }));
 dotenv.config()
 
-app.use(cors({ origin: 'https://taskassignmentrfl-qm4w4a7vw-harsh-sharmas-projects-090105a0.vercel.app' }));
+
 
 const connect=async()=>{
     try{
